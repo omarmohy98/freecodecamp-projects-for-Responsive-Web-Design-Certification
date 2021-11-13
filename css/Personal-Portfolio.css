@@ -25,7 +25,6 @@
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    margin-right: 60px;
     font-size: 25px;
     font-weight: 500;
 }
@@ -157,8 +156,11 @@
     font-size: 30px;
     color: rgb(170, 67, 67);
 }
-/* 350px to 819px */
-@media (min-width: 350px) and (max-width: 819px) {
+/* 320px to 819px */
+@media (min-width: 320px) and (max-width: 819px) {
+    .navbar ul li a {
+        margin-right: 20px;
+    }
     .projects div {
         width: 90%;
         margin-left: auto;
@@ -179,6 +181,9 @@
 }
 /* 820px to .... */
 @media (min-width: 820px) {
+    .navbar ul li a {
+        margin-right: 60px;
+    }
     .projects div {
         width: 30%;
     }

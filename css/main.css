@@ -2,8 +2,6 @@ body {
     background-color: #121212;
 }
 main {
-    width: 90%;
-    height: 80vh;
     margin: 10vh auto 0;
     background-color: white;
     border-radius: 10px;
@@ -14,8 +12,6 @@ main {
     align-items: center;
 }
 main a {
-    width: 30%;
-    height: 30%;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
@@ -35,4 +31,25 @@ main a:hover {
     transform: scale(1.1);
     color: rgb(155, 39, 39);
     background-color: rgb(124, 124, 124);
+}
+@media (min-width: 1024px) {
+    main {
+        width: 90%;
+        height: 80vh;
+    }
+    main a {
+        width: 30%;
+        height: 30%;
+    }
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+    main {
+        width: 90%;
+    }
+    main a {
+        width: 90%;
+        height: 100px;
+        margin: 15px auto;
+        text-align: center;
+    }
 }
