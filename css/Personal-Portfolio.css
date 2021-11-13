@@ -1,0 +1,197 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+/* Navbar style */
+.navbar {
+    width: 100%;
+    height: 12vh;
+    background-color: #1BBC9B;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 60px;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* Projects Style */
+.head-container {
+    width: fit-content;
+    margin: 80px auto 30px;
+    text-align: center;
+}
+.head-container h2 {
+    margin: 0 10px;
+    font-size: 40px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projects div {
+    margin: 15px 0;
+    text-align: center;
+    height: 500px;
+}
+.projects div figure {
+    width: 100%;
+    height: 80%;
+}
+.projects div figure img {
+    width: 100%;
+    height: 100%;
+}
+.projects div figcaption {
+    height: 20%;
+    padding-top: 35px;
+    background-color: #F2F2F2;
+}
+.projects div figcaption a {
+    text-decoration: none;
+    color: rgb(58, 55, 55);
+    font-size: 25px;
+    font-weight: 500;
+}
+.btn-container {
+    margin: 15px auto;
+    text-align: center;
+}
+.btn {
+    background-color: #1BBC9B;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 20%;
+    height: 50px;
+    transition-duration: 1s;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+.btn:hover {
+    background-color: chocolate;
+}
+.btn a:hover {
+    margin-right: 5px;
+}
+.project-tile:hover {
+    box-shadow: 5px 2px 8px 0px rgb(128, 125, 125);
+}
+/* Contact Style */
+.contact {
+    background-color: #2F2F2F;
+    width: 100%;
+    height: 400px;
+    padding-top: 70px;
+    text-align: center;
+}
+.contact h2 {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 50px;
+    color: white;
+}
+.contact p {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 25px;
+    color: rgb(170, 67, 67);
+}
+.contact div {
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.links-p {
+    text-decoration: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.links-p:hover {
+    transform: translate(0, 10px);
+}
+/* Welcome Style */
+.welcome-section {
+    height: 100vh;
+    background-color: #2F2F2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-section div {
+    text-align: center;
+}
+.welcome-section div h1 {
+    font-size: 60px;
+    color: #F2F2F2;
+    margin-bottom: 10px;
+}
+.welcome-section div p {
+    font-size: 30px;
+    color: rgb(170, 67, 67);
+}
+/* 350px to 819px */
+@media (min-width: 350px) and (max-width: 819px) {
+    .projects div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-container {
+        width: 100%;
+    }
+    .contact div {
+        width: 100%;
+    }
+    .links-p {
+        width: 30%;
+    }
+    .welcome-section div {
+        width: 95%;
+    }
+}
+/* 820px to .... */
+@media (min-width: 820px) {
+    .projects div {
+        width: 30%;
+    }
+    .btn-container {
+        width: 50%;
+    }
+    .contact div {
+        width: 70%;
+    }
+    .links-p {
+        width: 20%;
+    }
+    .welcome-section div {
+        width: 80%;
+    }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="../css/Technical-Documentation.css">
+</head>
+
+<body>
+    <section class="container">
+        <nav id="navbar" class="navbar">
+            <header>HTML Documentation</header>
+            <hr>
+            <div class="link-container">
+                <a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a>
+                <hr>
+                <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+                <hr>
+                <a href="#What_is_HTML" class="nav-link">What is HTML</a>
+                <hr>
+                <a href="#Anatomy_of_an_HTML_element" class="nav-link">Anatomy of an HTML element</a>
+                <hr>
+                <a href="#Anatomy_of_an_HTML_document" class="nav-link">Anatomy of an HTML document</a>
+                <hr>
+                <a href="#HTML_comments" class="nav-link">HTML comments</a>
+                <hr>
+                <a href="#What_is_in_the_head_Metadata_in_HTML" class="nav-link">What is in the head Metadata in
+                    HTML</a>
+                <hr>
+                <a href="#What_is_the_HTML_head" class="nav-link">What is the HTML head</a>
+                <hr>
+                <a href="#Adding_a_title" class="nav-link">Adding a title</a>
+                <hr>
+                <a href="#Metadata_the_meta_element" class="nav-link">Metadata the meta element</a>
+                <hr>
+                <a href="#Adding_custom_icons_to_your_site" class="nav-link">Adding custom icons to your site</a>
+                <hr>
+                <a href="#Setting_the_primary_language_of_the_document" class="nav-link">Setting the primary language of
+                    the document</a>
+                <hr>
+                <a href="#Reference" class="nav-link">Reference</a>
+            </div>
+        </nav>
+        <main id="main-doc" class="main p-35">
+            <section id="Introduction_to_HTML" class="main-section">
+                <header>Introduction to HTML</header>
+                <div class="m">
+                    <p>
+                        At its heart, HTML is a fairly simple language made up of elements, which can be applied to
+                        pieces
+                        of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list?
+                        Is
+                        it part of a table?), structure a document into logical sections (Does it have a header? Three
+                        columns of content? A navigation menu?), and embed content such as images and videos into a
+                        page.
+                        This module will introduce the first two of these and introduce fundamental concepts and syntax
+                        you
+                        need to know to understand HTML.
+                    </p>
+                </div>
+            </section>
+            <section id="Prerequisites" class="main-section">
+                <header>Prerequisites</header>
+                <div class="m">
+                    <p>
+                        Before starting this module, you don't need any previous HTML knowledge, but you should have at
+                        least basic familiarity with using computers and using the web passively (i.e., just looking at
+                        it
+                        and consuming content). You should have a basic work environment set up (as detailed in
+                        Installing
+                        basic software), and understand how to create and manage files (as detailed in Dealing with
+                        files).
+                        Both are parts of our Getting started with the web complete beginner's module.
+                    </p>
+                </div>
+            </section>
+            <section id="What_is_HTML" class="main-section">
+                <header>What is HTML</header>
+                <div class="m">
+                    <p>
+                        HTML (Hypertext Markup Language) is not a programming language. It is a markup language that
+                        tells
+                        web browsers how to structure the web pages you visit. It can be as complicated or as simple as
+                        the
+                        web developer wants it to be. HTML consists of a series of elements, which you use to enclose,
+                        wrap,
+                        or mark up different parts of content to make it appear or act in a certain way. The enclosing
+                        tags
+                        can make content into a hyperlink to connect to another page, italicize words, and so on. For
+                        example, consider the following line of text:
+                        <code>My cat is very grumpy</code>
+                    </p>
+                    <p>
+                        If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing
+                        it in a paragraph (&lt;p&gt;) element:
+                        <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+                    </p>
+                </div>
+            </section>
+            <section id="Anatomy_of_an_HTML_element" class="main-section">
+                <header>Anatomy of an HTML element</header>
+                <div class="m">
+                    <p>
+                        Let's further explore our paragraph element from the previous section:
+                    </p>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png"
+                        alt="Anatomy of html elements">
+                    <p>The anatomy of our element is:
+                    <ul>
+                        <li><span>The opening tag:</span> This consists of the name of the element (in this example, p
+                            for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where
+                            the element begins or starts to take effect. In this example, it precedes the start of the
+                            paragraph text.</li>
+                        <li><span>The content:</span> This is the content of the element. In this example, it is the
+                            paragraph text.</li>
+                        <li><span>The closing tag:</span> This is the same as the opening tag, except that it includes a
+                            forward slash before the element name. This marks where the element ends. Failing to include
+                            a closing tag is a common beginner error that can produce peculiar results.</li>
+                    </ul>
+                    The element is the opening tag, followed by content, followed by the closing tag.
+                    </p>
+                </div>
+            </section>
+            <section id="Anatomy_of_an_HTML_document" class="main-section">
+                <header>Anatomy of an HTML document</header>
+                <div class="m">
+                    <p>
+                        Individual HTML elements aren't very useful on their own. Next, let's examine how individual
+                        elements combine to form an entire HTMLpage:
+                        <code
+                            class="codespiacal">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&#9;&lt;meta charset="utf-8"&gt;<br>&#9;&lt;title&gt;My test page&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&#9;&lt;p&gt;This is my page&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+                        Here we have:
+                    </p>
+                    <ol>
+                        <li><span>&lt;!DOCTYPE html&gt;</span>:
+                            The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set
+                            of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look
+                            something like this:
+                            <code>
+                                &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                            </code>
+                            More recently, the doctype is a historical artifact that needs to be included for everything
+                            else to work right.<span>&lt;!DOCTYPE html&gt;</span> is the shortest string of characters
+                            that counts as a valid doctype. That is all you need to know!
+                        </li>
+                        <li><span>&lt;html&gt;&lt;/html&gt;</span>: The <span>&lt;html&gt;</span> element. This element
+                            wraps all the content
+                            on the page. It is sometimes known as the root element.</li>
+                        <li>
+                            <span>&lt;head&gt;&lt;/head&gt;</span>:
+                            The &lt;head&gt;element. This element acts as a container for everything you want to include
+                            on the HTML page, that isn't the content the page will show to viewers. This includes
+                            keywords and a page description that would appear in search results, CSS to style content,
+                            character set declarations, and more. You'll learn more about this in the next article of
+                            the series.
+                        </li>
+                        <li>
+                            <span>&lt;meta charset="utf-8"&gt;</span>:
+                            This element specifies the character set for your document to UTF-8, which includes most
+                            characters from the vast majority of human written languages. With this setting, the page
+                            can now handle any textual content it might contain. There is no reason not to set this, and
+                            it can help avoid some problems later.
+                        </li>
+                        <li>
+                            <span>&lt;title&gt;&lt;/title&gt;</span>:
+                            The &lt;title&gt; element. This sets the title of the page, which is the title that appears
+                            in the browser tab the page is loaded in. The page title is also used to describe the page
+                            when it is bookmarked.
+                        </li>
+                        <li>
+                            <span>&lt;body&gt;&lt;/body&gt;</span>:
+                            The &lt;body&gt; element. This contains all the content that displays on the page, including
+                            text, images, videos, games, playable audio tracks, or whatever else.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="HTML_comments" class="main-section">
+                <header>HTML comments</header>
+                <div class="m">
+                    <p>
+                        HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making
+                        comments invisible to the user. The purpose of comments is to allow you to include notes in the
+                        code to explain your logic or coding. This is very useful if you return to a code base after
+                        being away for long enough that you don't completely remember it. Likewise, comments are
+                        invaluable as different people are making changes and updates. <br><br>
+
+                        To write an HTML comment, wrap it in the special markers <span>&lt;!-- and --&gt;</span>.
+                    </p>
+                </div>
+            </section>
+            <section id="What_is_in_the_head_Metadata_in_HTML" class="main-section">
+                <header>What is in the head Metadata in HTML</header>
+                <div class="m">
+                    <p>
+                        The head of an HTML document is the part that is not displayed in the web browser when the page
+                        is loaded. It contains information such as the page <span>&lt;title&gt;</span>, links to CSS (if
+                        you choose to
+                        style your HTML content with CSS), links to custom favicons, and other metadata (data about
+                        the HTML, such as the author, and important keywords that describe the document.) In this
+                        article we'll cover all of the above and more, in order to give you a good basis for working
+                        with markup.
+                    </p>
+                </div>
+            </section>
+            <section id="What_is_the_HTML_head" class="main-section">
+                <header>What is the HTML head</header>
+                <div class="m">
+                    <p>
+                        Let's revisit the simple <a href="#Anatomy_of_an_HTML_document">HTML document we covered in the
+                            previous article:</a>
+                        <code
+                            class="codespiacal">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&#9;&lt;meta charset="utf-8"&gt;<br>&#9;&lt;title&gt;My test page&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&#9;&lt;p&gt;This is my page&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+                        The HTML head is the contents of the
+                        <span>&lt;head&gt;</span> element — unlike the contents of the
+                        <span>&lt;body&gt;</span> element (which are displayed on the page when loaded in a browser),
+                        the head's content is
+                        not displayed on the page. Instead, the head's job is to contain metadata about the
+                        document. In the above example, the head is quite small:
+                        <code class="codespiacal">&lt;head&gt;<br>&#9;&lt;meta charset="utf-8"&gt;<br>&#9;&lt;title&gt;My test page&lt;/title&gt;<br>&lt;/head&gt;
+                        </code>
+                        In larger pages however, the head can get quite full. Try going to some of your favorite
+                        websites and use the developer tools to check out their head contents. Our aim here is not to
+                        show you how to use everything that can possibly be put in the head, but rather to teach you how
+                        to use the major elements that you'll want to include in the head, and give you some
+                        familiarity. Let's get started.
+                    </p>
+                </div>
+            </section>
+            <section id="Adding_a_title" class="main-section">
+                <header>Adding a title</header>
+                <div class="m">
+                    <p>
+                        We've already seen the <span>&lt;title&gt;</span> element in action — this can be used to add a
+                        title to the
+                        document. This however can get confused with the <span>&lt;h1&gt;</span> element, which is used
+                        to add a top
+                        level heading to your body content — this is also sometimes referred to as the page
+                        title. But they are different things!
+                    <ul>
+                        <li>
+                            The
+                            <span>&lt;h1&gt;</span>
+                            element appears on the page when loaded in the browser — generally this should be used once
+                            per page, to mark up the title of your page content (the story title, or news headline, or
+                            whatever is appropriate to your usage.)
+                        </li>
+                        <li>
+                            The
+                            <span>&lt;title&gt;</span>
+                            element is metadata that represents the title of the overall HTML document (not the
+                            document's content.)
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </section>
+            <section id="Metadata_the_meta_element" class="main-section">
+                <header>Metadata the meta element</header>
+                <div class="m">
+                    <p>
+                        Metadata is data that describes data, and HTML has an "official" way of adding metadata to a
+                        document — the
+                        <span>&lt;meta&gt;</span> element. Of course, the other stuff we are talking about in this
+                        article could also be
+                        thought of as metadata too. There are a lot of different types of
+                        <span>&lt;meta&gt;</span> elements that can be included in your page's
+
+                        <span>&lt;head&gt;</span>, but we won't try to explain them all at this stage, as it would just
+                        get too confusing.
+                        Instead, we'll explain a few things that you might commonly see, just to give you an idea.
+                    </p>
+                </div>
+            </section>
+            <section id="Adding_custom_icons_to_your_site" class="main-section">
+                <header>Adding custom icons to your site</header>
+                <div class="m">
+                    <p>
+                        To further enrich your site design, you can add references to custom icons in your metadata, and
+                        these will be displayed in certain contexts. The most commonly used of these is the favicon
+                        (short for "favorites icon", referring to its use in the "favorites" or "bookmarks" lists in
+                        browsers). <br> <br>
+
+                        The humble favicon has been around for many years. It is the first icon of this type: a 16-pixel
+                        square icon used in multiple places. You may see (depending on the browser) favicons displayed
+                        in the browser tab containing each open page, and next to bookmarked pages in the bookmarks
+                        panel.
+                    </p>
+                </div>
+            </section>
+            <section id="Setting_the_primary_language_of_the_document" class="main-section">
+                <header>Setting the primary language of the document</header>
+                <div class="m">
+                    <p>
+                        Finally, it's worth mentioning that you can (and really should) set the language of your page.
+                        This can be done by adding the lang attribute to the opening HTML tag (as seen in the
+                        meta-example.html and shown below.)
+                        <code>
+                            &lt;html lang="en-US" &gt;
+                        </code>
+                        This is useful in many ways. Your HTML document will be indexed more effectively by search
+                        engines if its language is set (allowing it to appear correctly in language-specific results,
+                        for example), and it is useful to people with visual impairments using screen readers (for
+                        example, the word "six" exists in both French and English, but is pronounced differently.)
+                    </p>
+                </div>
+            </section>
+            <section id="Reference" class="main-section">
+                <header>Reference</header>
+                <div class="m">
+                    <ul>
+                        <li>All the documentation in this page is taken from <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </section>
+</body>
+
+</html>

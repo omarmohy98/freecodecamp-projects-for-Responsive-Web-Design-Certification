@@ -1,0 +1,247 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #EEEEEE;
+}
+.header-section {
+    background-color: #EEEEEE;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.logo-img img {
+    max-width: 100%;
+    height: 45px;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+}
+.contact {
+    margin: 20px auto;
+    text-align: center;
+}
+.contact #email {
+    margin-bottom: 20px;
+    height: 30px;
+    padding-left: 5px;
+}
+.contact #submit {
+    height: 30px;
+}
+.contact p {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+input[type="submit"] {
+    background-color: #ce9421;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-delay: .3s;
+}
+input[type="submit"]:hover {
+    background-color: #FFA500;
+}
+.feature-container {
+    margin: 80px auto;
+}
+.feature-con {
+    width: 90%;
+    display: flex;
+    margin: 50px auto 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-con div {
+    width: 85%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.feature-container img {
+    width: 10%;
+    height: 10%;
+}
+.video {
+    margin: 20px auto;
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.g-price {
+    text-align: center;
+    border: 1px solid black;
+}
+.price-btn {
+    margin: 20px 0;
+    height: 45px;
+}
+.g-price h4 {
+    background-color: #b6b0b0;
+    padding: 15px 0;
+}
+.price-p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.desc-p {
+    line-height: 1.5;
+    margin: 15px 0;
+}
+/*  */
+footer div {
+    width: 100%;
+    text-align: end;
+}
+footer div ul {
+    list-style: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+footer div ul li {
+    margin-right: 20px;
+}
+footer div ul li a {
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+}
+.footer-p {
+    color: #444444;
+    font-size: 16px;
+}
+
+/*  */
+
+
+/* 350px to 1099px */
+@media (min-width: 350px) and (max-width: 1099px) {
+    .header-section {
+        flex-wrap: wrap;
+    }
+    .logo-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .nav-bar {
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .nav-bar ul {
+        list-style: none;
+    }
+    .contact {
+        width: 90%;
+    }
+    .contact #email {
+        width: 55%;
+    }
+    .contact #submit {
+        width: 35%;
+    }
+    .feature-container {
+        width: 100%;
+    }
+    .video {
+        width: 100%;
+        height: 360px;
+    }
+    .price {
+        width: 100%;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .g-price {
+        width: 60%;
+        margin-top: 10px;
+    }
+    
+    .price-btn {
+        width: 30%;
+    }
+    footer {
+        background-color: #DDDDDD;
+        width: 100%;
+        padding: 15px;
+    }
+}
+/* 1100px to ... */
+@media (min-width: 1100px) {
+    .header-section {
+        flex-wrap: nowrap;
+    }
+    .logo-img {
+        width: 20%;
+    }
+    .nav-bar {
+        width: 40%;
+        padding: 20px;
+    }
+    .nav-bar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar ul li {
+        width: 20%;
+    }
+    .contact {
+        width: 50%;
+    }
+    .contact #email {
+        width: 40%;
+    }
+    .contact #submit {
+        width: 25%;
+    }
+    .feature-container {
+        width: 60%;
+    }
+    .video {
+        width: 40%;
+        height: 360px;
+    }
+    .price {
+        width: 70%;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    .g-price {
+        width: 30%;
+    }
+    
+    .price-btn {
+        width: 30%;
+    }
+    footer {
+        background-color: #DDDDDD;
+        width: 70%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
